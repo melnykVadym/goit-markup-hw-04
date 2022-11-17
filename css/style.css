@@ -11,7 +11,7 @@ ul,p,h1,h2,h3,h4 {
 }
 :root {
     --main-color: #FFFFFF;
-    --aktive-color: #2196F3;
+    --active-color: #2196F3;
     --contact-color: #757575;
     --text-color: #212121;
     --order-color: #2F303A;
@@ -25,7 +25,7 @@ ul,p,h1,h2,h3,h4 {
     text-decoration: none;
 }
 .header-active-link {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .list {
     list-style: none;
@@ -59,7 +59,7 @@ section.order {
     letter-spacing: 0.02em;
 }
 .header-active-link {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .logo {
     font-family: 'Raleway';
@@ -71,7 +71,7 @@ section.order {
     margin-right: 93px;
 }
 .logo-blue {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .contacts {
     color: var(--contact-color);
@@ -84,7 +84,7 @@ section.order {
     font-style: normal;
 }
 .no-incline a:focus {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .map {
     text-decoration: none;
@@ -94,16 +94,16 @@ section.order {
     letter-spacing: 0.03em;
 }
 .map:hover {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }    
 footer {
     background-color: var(--order-color);
 }
 .contacts:hover {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .order-button {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     color: var(--main-color);
     font-family: 'Roboto';
     font-weight: 700;
@@ -129,7 +129,7 @@ footer {
     letter-spacing: 0.03em;
 }
 .contacts-footer:hover {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .skills {
     font-weight: 700;
@@ -190,13 +190,13 @@ footer {
     margin-left: 8px;
 }
 .projects:hover {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     color: var(--main-color);
     border: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects:focus {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     color: var(--main-color);
 }
 .projects-name {
@@ -229,7 +229,7 @@ footer {
 .header-list-link:hover,
 .header-list-link:focus
  {
-    color: var(--aktive-color);
+    color: var(--active-color);
 }
 .header-contact {
     display: flex;
@@ -286,6 +286,8 @@ margin-right: 30px;
 .team-flex-item {
     margin-left: 30px;
     flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-flex-item > img {
     width: 100%;
@@ -353,11 +355,11 @@ address {
     color: var(--icons-color);
 }
 .team-icons a:hover {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     color: var(--main-color);
 }
 .team-icons a:focus {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     color: var(--main-color);
 }
 .team-icons a svg {
@@ -407,12 +409,11 @@ address {
     fill: var(--icons-color);
 }
 .element-icon a:hover, .element-icon a:focus {
-    border: 1px solid var(--aktive-color);
-    outline: none;
+    border: 1px solid var(--active-color);
 }
 .element-icon a:hover svg,
 .element-icon a:focus svg {
-    fill: var(--aktive-color);
+    fill: var(--active-color);
 }
 .element-icon a {
     width: 100%;
@@ -445,7 +446,7 @@ address {
     border-radius: 50%;
 }
 .bottom-icons a:focus {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
     
 }
 .bottom-icons svg {
@@ -456,7 +457,7 @@ address {
     margin-top: 20px;
 }
 .bottom-icons:hover {
-    background-color: var(--aktive-color);
+    background-color: var(--active-color);
 }
 .bottom-icons:hover svg {
  fill: var(--main-color);
@@ -485,20 +486,17 @@ address {
     margin-right: 10px;
 }
 
-/* leson 5 */
-.work-description {
-    background-color: var(--aktive-color);
+/* leason 5 */
+/* .work-description {
+    background-color: var(--active-color);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    /* opacity: 90%; */
     color: var(--main-color);
     width: 100%;
-    /* height: 294px;  */
     justify-content: center;
     align-items: center;
-    /* padding: 24px; */
     font-weight: 400;
     font-size: 18px;
     line-height: calc(28 / 18);
@@ -506,25 +504,10 @@ address {
     transform: translateY(100%);
     transition: transform 500ms linear;
     opacity: 90%;
-    
 }
 .work-flex li {
     position: relative;
     cursor: pointer;
 }
 .work-flex li:hover .work-description {
-}
-/* modal */
-/* .backdrop .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 } */
